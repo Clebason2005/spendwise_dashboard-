@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpendWise - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar" tabindex="0">
+            <div class="sidebar-header">
+                <div class="logo">S$</div>
+                <h2>SpendWise</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active"><span>📊</span> Dashboard</a>
+                <a href="#" class="nav-item"><span>💳</span> Transactions</a>
+                <a href="#" class="nav-item"><span>📈</span> Analytics</a>
+                <a href="#" class="nav-item"><span>🎯</span> Budgets</a>
+                <a href="#" class="nav-item"><span>⚙️</span> Settings</a>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="upgrade-card">
+                    <p>Upgrade to Pro</p>
+                    <small>Get advanced insights</small>
+                    <button>Upgrade</button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <h1>Overview</h1>
+                <p>Welcome back, Edward. Here's your spending summary.</p>
+            </div>
+            <div class="header-right">
+                <div class="search-box">
+                    <span>🔍</span>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="profile">
+                    <div class="avatar">EC</div>
+                    <div class="profile-info">
+                        <strong>Edward Clebason</strong>
+                        <small>Student</small>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main">
+            <div class="stats-row">
+                <div class="stat-mini">
+                    <span>Total Balance</span>
+                    <h3>KES 84,500</h3>
+                </div>
+                <div class="stat-mini">
+                    <span>Monthly Spend</span>
+                    <h3>KES 32,750</h3>
+                </div>
+                <div class="stat-mini">
+                    <span>Saved this month</span>
+                    <h3 class="positive">KES 12,250</h3>
+                </div>
+            </div>
+
+            <div class="cards-grid">
+                <!-- Card 1 -->
+                <article class="card" tabindex="0">
+                    <div class="card-top">
+                        <div class="card-icon food">🍔</div>
+                        <span class="trend up">+12%</span>
+                    </div>
+                    <h3>Food & Dining</h3>
+                    <p class="amount">KES 8,450</p>
+                    <div class="progress"><div style="width: 68%"></div></div>
+                    <small>68% of KES 12,500 budget</small>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="card" tabindex="0">
+                    <div class="card-top">
+                        <div class="card-icon transport">🚌</div>
+                        <span class="trend down">-4%</span>
+                    </div>
+                    <h3>Transport</h3>
+                    <p class="amount">KES 3,200</p>
+                    <div class="progress"><div style="width: 45%"></div></div>
+                    <small>45% of KES 7,000 budget</small>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="card" tabindex="0">
+                    <div class="card-top">
+                        <div class="card-icon rent">🏠</div>
+                        <span class="trend">—</span>
+                    </div>
+                    <h3>Rent</h3>
+                    <p class="amount">KES 12,000</p>
+                    <div class="progress"><div style="width: 100%"></div></div>
+                    <small>Fixed monthly expense</small>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="card" tabindex="0">
+                    <div class="card-top">
+                        <div class="card-icon entertainment">🎬</div>
+                        <span class="trend up">+23%</span>
+                    </div>
+                    <h3>Entertainment</h3>
+                    <p class="amount">KES 4,500</p>
+                    <div class="progress"><div style="width: 75%"></div></div>
+                    <small>75% of KES 6,000 budget</small>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="card highlight" tabindex="0">
+                    <div class="card-top">
+                        <div class="card-icon savings">💰</div>
+                        <span class="trend up">+18%</span>
+                    </div>
+                    <h3>Savings</h3>
+                    <p class="amount">KES 12,250</p>
+                    <div class="progress"><div style="width: 82%"></div></div>
+                    <small>82% towards goal • KES 15,000</small>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="card" tabindex="0">
+                    <div class="card-top">
+                        <div class="card-icon utilities">💡</div>
+                        <span class="trend down">-8%</span>
+                    </div>
+                    <h3>Utilities</h3>
+                    <p class="amount">KES 2,850</p>
+                    <div class="progress"><div style="width: 57%"></div></div>
+                    <small>57% of KES 5,000 budget</small>
+                </article>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
